@@ -19,7 +19,7 @@ if "chats" not in st.session_state:
 
 # Centered title with warm, supportive messaging
 st.markdown("""
-    <h1 style="text-align: center;">EthosEdge (Your Supportive Chatbot)</h1>
+    <h1 style="text-align: center;">EthosEdge</h1>
     <h3 style="text-align: center; color: #4CAF50;"> We're Here for You 💙</h3>
 """, unsafe_allow_html=True)
 
