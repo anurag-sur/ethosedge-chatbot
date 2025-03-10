@@ -78,7 +78,7 @@ else:
         st.markdown(
             """
             <div style='text-align: center; background-color: #082242; padding: 10px; border-radius: 5px;'>
-                <p style='margin: 0; font-size: 16px; color: ##a6c1e3;'>
+                <p style='margin: 0; font-size: 16px; color: #a6c1e3;'>
                     Start a new chat or select an existing one from the history. Remember, we're here for you.
                 </p>
             </div>
