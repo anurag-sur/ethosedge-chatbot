@@ -4,7 +4,7 @@ import streamlit as st
 
 # Set page config
 st.set_page_config(
-    page_title="EthosEdge (Free Chatbot)",
+    page_title="EthosEdge",
     page_icon="🤖",
     layout="wide"
 )
@@ -48,11 +48,11 @@ TOGETHER_API_URL = "https://api.together.xyz/v1/chat/completions"
 HEADERS = {"Authorization": "Bearer 7d86fd8a0981c8e37642cfdc13da0439edb2d76de30a14ae793a84674e74814b", "Content-Type": "application/json"}
 
 def query_together(messages):
-    system_message = {"role": "system", "content": "You are a kind, supportive, and empathetic office assistant who always reassures users and makes them feel heard and valued."}
+    system_message = {"role": "system", "content": "Your name is EthosEdge. You are a kind, supportive, and empathetic office assistant who always reassures users and makes them feel heard and valued."}
     payload = {
         "model": "mistralai/Mistral-7B-Instruct-v0.1",
         "messages": [system_message] + messages,
-        "max_tokens": 200
+        "max_tokens": 500
     }
     response = requests.post(TOGETHER_API_URL, headers=HEADERS, json=payload)
     if response.status_code == 200:
